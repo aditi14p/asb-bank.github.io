@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <style>
+		button{
+      border-radius: 5px;
+    border:0;
+    background:#235;
+    color:#eee;
+    line-height:37px;
+    height:40px;
+    width: 10%;
+    cursor:pointer;
+    font-size: 20px;
+		}
+	  button:hover{
+			background-color:#777E8B;
+			transform: scale(1.1);
+			color:white;
+		}
+    input{
+      width:50%;
+ height:25px;
+ line-height:25px;
+ color:#333;
+ background-color:#fff;
+ border-bottom:1px solid #236;
+ border-radius:3px;
+ padding:3px;
+    }
+  select{width:50%;
+ height:33px;
+}
+    form{
+      text-align: center;
+      font-size: 23px;
+    }
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      font-family:"Times New Roman", Times, serif;
+      font-size: 23px;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid black;
+    }
+    th{
+      background-color: lightseagreen;
+    }
+    </style>
+</head>
+
+<body>
+        <center><h1>Transaction</h1></center>
+            <form method="post" name="tcredit" class="tabletext" ><br>
+        <div>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Balance</th>
+                </tr>
+            </table>
+        </div>
+        <br><br><br>
+        <section class="form">
+        <label>Transfer To:</label>
+        <select name="to" required>
+            <option value="" disabled selected>Select</option>
+            
+            <div>
+        </select>
+        <br>
+        <br>
+            <label>Amount :</label>
+            <input type="number" name="amount" required>
+            <br><br>
+            <button name="submit" type="submit" id="myBtn">Transfer</button>
+          </section>
+        </form>
+</body>
+</html>
